@@ -10,7 +10,7 @@ const Navbar = () => {
 
     // Returning that to prevent a loop.
     window.onscroll = () => {
-        setIsScrolled(window.pageYOffset === SCROLLED_TO_TOP ? true : false);
+        setIsScrolled(window.pageYOffset === SCROLLED_TO_TOP ? false : true);
         return () => (window.scroll = null)
     };
 
